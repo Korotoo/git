@@ -127,7 +127,7 @@ nano fichier2.md
 
 Comment utiliser VS Code pour qu’il nous montre les différences entre l’ancienne version de fichier2.md et la version courante que l’on vient d’éditer ?
 
-get diff
+git diff
 
 Committer ces deux modifications : “Fonctionnalité 1 - première phase”
 
