@@ -148,13 +148,20 @@ Committer ces deux modifications : “Fonctionnalité 1 - terminéeFonctionnal
 git add fichier2.md fichier4.md
 git commit -m "Fonctionnalité 1 - terminée"
 
+
 VALIDATION PROF03
 
+
 Afficher la liste des fichiers du répertoire
+
+ls
 
 Se déplacer sur la branche master
 
+git switch master
+
 Afficher la liste des fichiers du répertoire
+
 
 Pourquoi les deux sorties sont-elles différentes ? Les fichiers ont-ils disparus ?
 
