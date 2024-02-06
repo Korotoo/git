@@ -142,7 +142,7 @@ Modifier de nouveau le fichier fichier2.md
 
 nano fichier2.md
 Ajout okok
-
+ 
 Committer ces deux modifications : “Fonctionnalité 1 - terminée”
 
 git add fichier2.md fichier4.md
@@ -162,6 +162,7 @@ git switch master
 
 Afficher la liste des fichiers du répertoire
 
+<<<<<<< HEAD
 ls
 
 Pourquoi les deux sorties sont-elles différentes ? Les fichiers ont-ils disparus ?
@@ -219,6 +220,7 @@ l’option --graph affiche le log sous forme de graphe
 Installer l’extension VS Code Git Graph et visualiser le graphe actuel des commits à l’aide de cette extension
 
 Sur cette représentation, que représente les points ?
+<<<<<<< HEAD
 
 Il représente l'ajout de toutes choses faite depuis le 16 janvier, les différents commit qui a pu avoir 
 
@@ -300,3 +302,5 @@ Tâche terminée ? => fusion dans la branche d’intégration et suppression de 
 Supprimer les trois branches fonctionnalitex (attention : on ne peut pas supprimer une branche sur laquelle on est)
 
 VALIDATION PROF05
+=======
+
