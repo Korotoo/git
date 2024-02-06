@@ -253,12 +253,13 @@ Auto-merging Commande-git.md
 CONFLICT (add/add): Merge conflict in Commande-git.md
 Automatic merge failed; fix conflicts and then commit the result.
 
-
 Noter le changement dans l’onglet Git Graph. Que signifie la mention Fast-forward indiquée par la sortie de la commande ?
 
 la branche fonctionnalite1 a rejoint la branche master
 
 On veut maintenant fusionner fonctionnalite2 dans la branche d’intégration (master). Effectuer cette fusion.
+
+git merge fonctionnalite2
 
 Noter le changement dans l’onglet Git Graph. Que signifie la mention Merge made by the … strategy indiquée par la sortie de la commande ?
 
