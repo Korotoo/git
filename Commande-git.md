@@ -244,7 +244,7 @@ nous somme revenue sur la branch master et sa fait que il y rien dessus
 
 On va maintenant intégrer la branche fonctionnalite1, qui est terminée, dans la branche d’intégration (ça s’appelle une fusion, ou un merge) : fusionner avec la branche fonctionnalite1
 
-
+git merge fonctionnalite1
 
 Noter le changement dans l’onglet Git Graph. Que signifie la mention Fast-forward indiquée par la sortie de la commande ?
 
