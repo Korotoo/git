@@ -143,12 +143,14 @@ Modifier de nouveau le fichier fichier2.md
 nano fichier2.md
 Ajout okok
 
-Committer ces deux modifications : “Fonctionnalité 1 - terminéeFonctionnalité 1 - terminée”
+Committer ces deux modifications : “Fonctionnalité 1 - terminée”
 
 git add fichier2.md fichier4.md
 git commit -m "Fonctionnalité 1 - terminée"
 
+
 VALIDATION PROF03
+
 
 Afficher la liste des fichiers du répertoire
 
@@ -164,19 +166,31 @@ ls
 
 Pourquoi les deux sorties sont-elles différentes ? Les fichiers ont-ils disparus ?
 
-car on a changer de branch, les dossiers sont toujours la
+car ce n'ai pas la même branch, oui fichier 3 et 4
 
 Créer une nouvelle branche fonctionnalite2
 
-git branch fonctionnalite2
+git branch focntionnalite2
 
 Cette branche ne va pas avoir toutes les données incluses dans fonctionnalite1. Pourquoi ?
 Qu’aurait-il fallu faire si on avait souhaité démarrer la branche fonctionnalite2 en intégrant les modifications récentes de fonctionnalite1 ?
+
+git add commande-git.md
+git commit -m "maj"
+git checkout fonctionnalite2
+
 Se déplacer sur la nouvelle branche fonctionnalite2
+
+git switch fonctionnalite2
 
 Créer un nouveau fichier fichier5.md
 
+touch fichier et fichier5
+
 Faire un commit intégrant cette ajout : “Ajout fichier5.md”
+
+git add fichier5.md
+git commit -m "Ajout de fichier5.md"
 
 Entrer la commande git log --oneline --decorate --graph --all pour visualiser, sur le terminal, le graphe des commits sur toutes les branches
 
