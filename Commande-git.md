@@ -166,13 +166,16 @@ ls
 
 Pourquoi les deux sorties sont-elles différentes ? Les fichiers ont-ils disparus ?
 
-car ce n'ai pas la même branch, oui fichier 3 et 4
+car ce n'ai pas la même branch, oui fichier 3 et 4 il sont sur une autre branche
 
 Créer une nouvelle branche fonctionnalite2
 
 git branch focntionnalite2
 
 Cette branche ne va pas avoir toutes les données incluses dans fonctionnalite1. Pourquoi ?
+
+Car quant j'ai crée la branche fonctionnalite2 je l'ai crée sur master donc il ne peut plus voir les modifs
+
 Qu’aurait-il fallu faire si on avait souhaité démarrer la branche fonctionnalite2 en intégrant les modifications récentes de fonctionnalite1 ?
 
 git add commande-git.md
@@ -217,10 +220,12 @@ Installer l’extension VS Code Git Graph et visualiser le graphe actuel des com
 
 Sur cette représentation, que représente les points ?
 
-Il représente l'ajout de toutes choses faite depuis le 16 janvier
+Il représente l'ajout de toutes choses faite depuis le 16 janvier, les différents commit qui a pu avoir 
 
 Comment voit-on sur quelle branche on est actuellement ?
 
 Nathan@Nothing MINGW64 ~/OneDrive/Cour/Informatique/Linux/git (fonctionnalite2)
+
+mais aussi dans git graph la partie qui est en gras veut dire que on est la
 
 VALIDATION PROF04
