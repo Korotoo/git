@@ -194,6 +194,20 @@ git commit -m "Ajout de fichier5.md"
 
 Entrer la commande git log --oneline --decorate --graph --all pour visualiser, sur le terminal, le graphe des commits sur toutes les branches
 
+$ git log --oneline --decorate --graph --all
+* 7b80f04 (HEAD -> fonctionnalite2, origin/fonctionnalite2) modified
+* 93359a5 Ajout de fichier5
+* 7877af5 maj
+| * 7b6522b (fonctionnalite1) Newfile
+| * 701e6e9 (origin/fonctionnalite1) modified
+| * b56a8bc Add commande
+| * 80c83c5 Fonctionnalite 1 terminee
+| * 82fbde7 Fonctionnalite 1 - premiere phase
+|/
+* 9cb5bb9 (master, bois) Ajout de texte fichier1
+* efdd5a0 Ajout de fichier2.md et modification de fichier1.md
+* 101a98c Ajout fichier1.md
+
 Noter la « déviation » entre les deux branches, à partir de la branche master (schématisée sous forme de traits)
 l’option --all permet de visualiser toutes les branches, pas seulement celle sur laquelle on est
 l’option --oneline affiche les commits sur une seule ligne
@@ -202,5 +216,11 @@ l’option --graph affiche le log sous forme de graphe
 Installer l’extension VS Code Git Graph et visualiser le graphe actuel des commits à l’aide de cette extension
 
 Sur cette représentation, que représente les points ?
+
+Il représente l'ajout de toutes choses faite depuis le 16 janvier
+
 Comment voit-on sur quelle branche on est actuellement ?
+
+Nathan@Nothing MINGW64 ~/OneDrive/Cour/Informatique/Linux/git (fonctionnalite2)
+
 VALIDATION PROF04
