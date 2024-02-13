@@ -273,7 +273,12 @@ git branch fonctionnalité3
 nano fichier1
 
 Comment utiliser Git Graph pour qu’il nous montre les différences entre l’ancienne version de fichier1.md et la version courante que l’on vient de committer ?
+
+On vois un nouveaux point pour la branch et le fichier et dedans avec le message du commit
+
 Repartir sur master, et modifier fichier1.md en y ajoutant aussi une ligne (différente de celle qu’on a ajoutée sur l’autre branche) ; ajouter à l’index et commit
+
+nano fichier1.md
 
 Tenter de fusionner la branche fonctionnalite3 avec master
 
