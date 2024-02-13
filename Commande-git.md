@@ -292,9 +292,24 @@ il y'a un conflit le fichier fichier1 et modifier donc il peut pas commit
 
 Lancer un git status
 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   Commande-git.md
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   fichier1.md
+
+
 Que doit-on faire si on veut annuler la fusion en cours ? (ne pas lancer la commande)
 
-git merge --
+git merge --abort
 
 On veut résoudre le conflit. Plusieurs possibilités :
 
@@ -315,6 +330,8 @@ Il ne doit plus y avoir de marques quelconques en dehors des ajouts fonctionnels
 Sauvegarder
 Ajouter les modification à l’index et committer
 
+nano fichier1.md
+
 NB : parfois, plusieurs fichiers sont en conflit ; le processus est identique, il faut juste résoudre les conflits sur tous les fichiers
 
 NB : les conflits de fusion sont fréquents lorsqu’on travaille en collaboration (plusieurs personnes vont travailler sur le même fichier pour remplir deux fonctionnalités différentes)
@@ -331,6 +348,8 @@ Ne pas réutiliser une branche qui a déjà été intégrée pour démarrer une 
 Nouvelle tâche ? => nouvelle branche à partir d’un commit de la branche d’intégration (en général le plus récent)
 Tâche terminée ? => fusion dans la branche d’intégration et suppression de la branche
 Supprimer les trois branches fonctionnalitex (attention : on ne peut pas supprimer une branche sur laquelle on est)
+
+git branch -d (nom de la branche)
 
 VALIDATION PROF05
 =======
