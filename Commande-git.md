@@ -321,6 +321,8 @@ NB : les conflits de fusion sont fréquents lorsqu’on travaille en collabora
 
 Les branches créées n’ont plus de raison d’exister
 
+non
+
 Elles avaient pour but de créer une déviation afin de travailler sur des fonctionnalités individuelles, sans interférer avec le travail des autres, avant de les fusionner dans la branche d’intégration
 On va vouloir nettoyer le dépôt en les supprimant
 Cela ne va bien sûr pas supprimer tous les commits qui y sont associés
