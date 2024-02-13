@@ -271,6 +271,7 @@ Créer une nouvelle branche fonctionnalite3, se déplacer dessus, et modifier le
 
 git branch fonctionnalité3
 nano fichier1
+Committer : “Modification fichier1 pour fonctionnalité 3”
 
 Comment utiliser Git Graph pour qu’il nous montre les différences entre l’ancienne version de fichier1.md et la version courante que l’on vient de committer ?
 
@@ -279,13 +280,22 @@ On vois un nouveaux point pour la branch et le fichier et dedans avec le message
 Repartir sur master, et modifier fichier1.md en y ajoutant aussi une ligne (différente de celle qu’on a ajoutée sur l’autre branche) ; ajouter à l’index et commit
 
 nano fichier1.md
+Bodyyyy Holaaa
 
 Tenter de fusionner la branche fonctionnalite3 avec master
 
+git merge foncionnalite3
+
 Que se passe-t-il et pourquoi ?
+
+il y'a un conflit le fichier fichier1 et modifier donc il peut pas commit
+
 Lancer un git status
 
 Que doit-on faire si on veut annuler la fusion en cours ? (ne pas lancer la commande)
+
+git merge --
+
 On veut résoudre le conflit. Plusieurs possibilités :
 
 Conserver uniquement les modifications faites dans fonctionnalite3
