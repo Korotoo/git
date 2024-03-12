@@ -6,46 +6,117 @@ mkdir tp-git
 
 Se déplacer dans le répertoire
 
+cd tp-git/
+
 Vérifier qu’on est dans le bon répertoire en affichant le chemin du répertoire courant
+
+pwd
 
 Initialiser un dépôt Git
 
+$ cd C/Users/Nathan/Onedrive/Cour/Informatique/Linux/git
+
+git init
+
 Lister tous les fichiers du répertoire (y compris les fichiers cachés) pour s’assurer que le répertoire .git à été créé
+
+ls -a
 
 Ouvrir ce répertoire sous VS Code
 
 Exécuter git status et copier/coller la sortie
 
-Créer le fichier fichier1.md avec un contenu quelconque et l’enregistrer (vous pouvez utiliser VS Code pour créer et éditer des fichiers)
-
-Attention, il s’agit bien de créer un nouveau fichier, et non un répertoire. Il en sera de même tout au long de ce TP.
-Créer le fichier fichier2.md avec un contenu quelconque et l’enregistrer
-
-Exécuter git status et copier/coller la sortie
-
-Ajouter fichier1.md à l’index de Git (zone de Staging)
-
-Exécuter git status et copier/coller la sortie
-
-Créer un commit avec pour message : “Ajout de fichier1.md”
-
-VALIDATION PROF01
-
-Exécuter git status et copier/coller la sortie
-
+***********
 On branch master
+
+No commits yet
+
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         Commande-git.md
 
 nothing added to commit but untracked files present (use "git add" to track)
+*************
 
-Modifier fichier1.md et enregistrer
+Créer le fichier fichier1.md avec un contenu quelconque et l’enregistrer (vous pouvez utiliser VS Code pour créer et éditer des fichiers)
 
-Ajout de Heyyyyyy
+touch fichier1.md
+nano fichier1.md
+Hello World
+CTRL X
+
+Attention, il s’agit bien de créer un nouveau fichier, et non un répertoire. Il en sera de même tout au long de ce TP.
+Créer le fichier fichier2.md avec un contenu quelconque et l’enregistrer
+
+touch fichier2.md
+nano fichier2.md
+No Hello World
+CTRL X
 
 Exécuter git status et copier/coller la sortie
 
+***********************
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Commande-git.md
+        fichier1.md
+        fichier2.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+***********************
+
+Ajouter fichier1.md à l’index de Git (zone de Staging)
+
+git add fichier1.md
+
+Exécuter git status et copier/coller la sortie
+
+*********************
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   fichier1.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Commande-git.md
+        fichier2.md
+*********************
+
+Créer un commit avec pour message : “Ajout de fichier1.md”
+
+git commit -m "Ajout fichier1.md"
+
+VALIDATION PROF01
+
+Exécuter git status et copier/coller la sortie
+
+*********************
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Commande-git.md
+        fichier2.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+*********************
+
+Modifier fichier1.md et enregistrer
+
+nano fichier1.md
+Juice Boys
+CTRL X
+
+Exécuter git status et copier/coller la sortie
+
+************************
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -55,47 +126,43 @@ Changes not staged for commit:
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         Commande-git.md
+        fichier2.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
+************************
 
 Ajouter fichier1.md et fichier2.md à la zone de Staging
 
-$ git add fichier1.md fichier2.md
-warning: in the working copy of 'fichier1.md', LF will be replaced by CRLF the next time Git touches it
+git add fichier1.md fichier2.md
 
 Créer un commit “Ajout de fichier2.md et modification de fichier1.md”
 
-git commit -m "Ajout de texte fichier1"
-[master 9cb5bb9] Ajout de texte fichier1
- 1 file changed, 1 insertion(+)
+git commit -m "Ajout de fichier2.md et modification de fichier1.md"
 
 Exécuter git status et copier/coller la sortie
 
-$ git status
+**********************
 On branch master
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         Commande-git.md
 
 nothing added to commit but untracked files present (use "git add" to track)
+**********************
 
 Copier/coller l’ID des deux premiers commits (utiliser log) :
 
-ID commit 1 : efdd5a0b2cd37f00b1c278d40c6976c7579524b0
-ID commit 2 : 9cb5bb97e64adc1fc4fa91ebd6bef47a77dfb1ab
+ID commit 1 : 101a98ccd86abcd3113acad580870b57568c8bb8
+ID commit 2 : efdd5a0b2cd37f00b1c278d40c6976c7579524b0 
 Que signifie qu’un fichier est “tracked” ou “untracked“ ?
 
-tracked veut dire que en gros même après un commit il continue d'être suivie et untracked l'inverse il ne donne plus d'informationa propos des fichiers 
+Sa veut dire qu'il sont déjà passer dans la page de staying 
 
 Pourquoi doit-on passer les fichiers par la zone de Staging (l’index) avant de les committer ?
 
-Pour dire que il va passer le commit ces une préparation pour passer au commit 
-
-
+Pour pouvoir qu'il comprennent qu'il va devoir envoyer ces fichier la qui sont dans cette Staying a commit est pas des autres 
 
 VALIDATION PROF02
-
-
 
 Créer une branche fonctionnalite1
 
